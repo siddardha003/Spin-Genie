@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinDecide - Decision Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="home-container">
+        <!-- Animated background elements -->
+        <div class="bg-circles">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </div>
+        
+        <!-- Main content -->
+        <main class="home-content">
+            <div class="logo-container">
+                <div class="wheel-logo">
+                    <img src="assets/images/spin-genie2.png" alt="Logo" class="center-logo">
+                </div>
+                <h1>Spin<span>Genie</span></h1>
+                <p class="tagline">Let the wheel make your tough choices!</p>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn start-btn" id="start-btn">
+                    <span>Start Deciding</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="btn history-btn" id="history-btn">
+                    <span>Decision History</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

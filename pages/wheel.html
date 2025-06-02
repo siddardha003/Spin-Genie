@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinDecide - Decision Wheel</title>
+    <link rel="stylesheet" href="../wheel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="wheel-app">
+        <!-- Header Section -->
+        <header class="app-header">
+            <button class="back-btn" id="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back
+            </button>
+            <h1>Decision Wheel</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="wheel-section">
+                <div class="wheel-container">
+                    <canvas id="wheelCanvas" width="350" height="350"></canvas>
+                    <div class="wheel-pointer"></div>
+                    <div class="wheel-center">
+                        <img src="../assets/images/spin-genie2.png" alt="Logo" class="center-logo">
+                    </div>
+                </div>
+                
+                <div class="result-container" id="result">
+                    <div class="result-content">
+                        <p>Add options and spin the wheel!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <div class="input-group">
+                    <input type="text" id="optionInput" placeholder="Enter option...">
+                    <button id="addOptionBtn">Add</button>
+                </div>
+                
+                <div class="options-container">
+                    <ul class="options-list" id="optionsList"></ul>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="spinWheelBtn" class="spin-btn">Spin Wheel</button>
+                    <button id="clearOptionsBtn" class="clear-btn">Clear All</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="spinSound" src="../assets/sounds/spin.mp3"></audio>
+    <audio id="winSound" src="../assets/sounds/win.mp3"></audio>
+
+    <script src="../scripts/wheel.js"></script>
+</body>
+</html>
