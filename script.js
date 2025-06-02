@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             ripple.remove();
             // Navigate to history page
-            window.location.href = 'history.html';
+            window.location.href = 'pages/history.html';
         }, 500);
     });
     

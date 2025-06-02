@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const spinWheelBtn = document.getElementById('spinWheelBtn');
     const clearOptionsBtn = document.getElementById('clearOptionsBtn');
     const resultDisplay = document.getElementById('result').querySelector('p');
-    const backBtn = document.getElementById('backBtn');
+    const backBtn = document.getElementById('back-btn');
     const spinSound = document.getElementById('spinSound');
     const winSound = document.getElementById('winSound');
 
